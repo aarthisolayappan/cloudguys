@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('IMG_6217.JPG') no-repeat center top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .grid {
+    position: absolute;
+    display: grid;
+    gap: 0px;
+  }
+  
+  .grid div {
+    width: 10px;
+    height: 10px;
+    border: 0px;
+    transition: background-color 0.3s;
+  }
+  
+  #reset-btn, #next-btn, #home-btn {
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: solid;
+    border-width: 2.1px;
+    z-index: 10; /* Ensure buttons are in front of grid */
+  }
+  
+  #reset-btn {
+    position: absolute;
+    top: 180px;
+    right: 20px; /* Place it in the top left corner */
+  }
+  
+  #next-btn {
+    position: absolute;
+    top: 100px;
+    right: 20px; /* Space out from the reset button */
+  }
+
+  #home-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Space out from the reset button */
+  }

@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 0%;
+    border: none;
+    position: absolute;
+    background-color: white;
+}
+
+#homedot {
+    top: 13%;
+    left: 50%;
+    position: fixed;
+}
+
+#home{
+    margin-left: 47%;
+    margin-top: 3%;
+    position: fixed;
+}
+
+#work{
+    margin-left: 47%;
+    margin-top: 52.5%;
+    position: fixed;
+}
+
+#workdot{
+    top: 84%;
+    left: 50%;
+    position: fixed;
+
+}
+
+.line {
+    position: absolute;
+    left: 50.5%;
+    top: 14%;
+    width: 2px;
+    background-color: white;
+    height: 70%;
+}
+
+.label {
+    position: absolute;
+    font-size: 16px;
+    color: black;
+}
+
+#everything {
+    top: 45%;
+    left: 42.5%;
+}
+
+#mostly {
+    top: 60%;
+    left: 15%;
+}
+
+.image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transform-origin: center center;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 0.7s;
+    z-index: 10;
+}
+
+.image:hover{
+    transform: scale(1.6);
+}
+
+
+#home, #work, #everything, #mostly {
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    border: solid;
+    border-width: 2.1px;
+    z-index: 10; /* Ensure buttons are in front of grid */
+    width: fit-content;
+}
