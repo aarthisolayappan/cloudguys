@@ -1,3 +1,9 @@
+// Redirect to home.html when the page is loaded
+if (window.location.pathname === '/index.html') {
+  window.location.href = 'home.html'; // This will redirect you to home.html
+}
+
+
 const gridContainer = document.querySelector('.grid');
 const resetBtn = document.getElementById('reset-btn');
 const nextBtn = document.getElementById('next-btn');
